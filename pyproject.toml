@@ -1,0 +1,26 @@
+[project]
+name = "trader-bot-djangon"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "alegaon",email = "alegaon@outlook.com.ar"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "django (>=5.2.7,<6.0.0)",
+    "django-ninja (>=1.4.5,<2.0.0)",
+    "pydantic (>=2.12.3,<3.0.0)",
+    "django-extensions (>=4.1,<5.0)"
+]
+
+[tool.poetry]
+packages = [{include = "trader_bot_djangon", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
